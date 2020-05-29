@@ -1,0 +1,47 @@
+body {
+  background: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+*{
+  margin-top: 30px;
+}
+.App{
+  margin-left: 25%;
+}
+#coin {
+
+}
+.heads, .tails{
+  margin-left: 46%;
+  margin-right: 4%;
+  height: 30wv;
+  width: 30wv;
+}
+#button {
+  width: 50vw;
+  margin-left: 25%;
+  background:orange;
+  color:#fff;
+  padding:10px 15px;
+  border-radius:2px;
+  display:inline-block;
+  transition:0.5s;
+  cursor:pointer;
+}
+
+
+.animate-coin {
+
+  animation: flip 1.4s 1;
+}
+@keyframes flip {
+  0% {
+    transform: scale3d(1,1,1) rotateX(0deg);
+  }
+  50% {
+    transform: scale3d(2,2,2) rotateX(3600deg);
+  }
+  100% {
+    transform: scale3d(1,1,1) rotateX(7200deg);
+  }
+}
